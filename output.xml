@@ -1,0 +1,2236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20191111 17:22:34.648" generator="Robot 3.1.2 (Python 2.7.12 on win32)">
+<suite source="C:\Users\nikhiran\eclipse-workspace\ElisaAutomation" id="s1" name="ElisaAutomation">
+<suite source="C:\Users\nikhiran\eclipse-workspace\ElisaAutomation\Ring" id="s1-s1" name="Ring">
+<suite source="C:\Users\nikhiran\eclipse-workspace\ElisaAutomation\Ring\TestSuits" id="s1-s1-s1" name="TestSuits">
+<suite source="C:\Users\nikhiran\eclipse-workspace\ElisaAutomation\Ring\TestSuits\RingVoice" id="s1-s1-s1-s1" name="RingVoice">
+<suite source="C:\Users\nikhiran\eclipse-workspace\ElisaAutomation\Ring\TestSuits\RingVoice\TC_001-Create Ring Solution-Default Values.robot" id="s1-s1-s1-s1-s1" name="TC 001-Create Ring Solution-Default Values">
+<test id="s1-s1-s1-s1-s1-t1" name="TC_001-Create Ring Solution-Default Values">
+<kw name="Set Screenshot Directory" library="Selenium2Library">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${OUTPUT_DIR}//Screenshots//TC_001-Create Ring Solution-Default Values</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.492" starttime="20191111 17:22:36.492"></status>
+</kw>
+<kw name="Open Browser and Maximize window" library="LoginPage">
+<kw name="Read Data from Excel" library="ExcelOperations">
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>1</arg>
+<arg>0</arg>
+<arg>TestData_Credentials</arg>
+</arguments>
+<assign>
+<var>${browser}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.492" level="INFO">${browser} = Chrome</msg>
+<status status="PASS" endtime="20191111 17:22:36.492" starttime="20191111 17:22:36.492"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.492" level="INFO">${browser} = Chrome</msg>
+<status status="PASS" endtime="20191111 17:22:36.492" starttime="20191111 17:22:36.492"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>TestData_Credentials</arg>
+</arguments>
+<assign>
+<var>${URL}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.507" level="INFO">${URL} = https://elisa--uat.cs107.my.salesforce.com/home/home.jsp</msg>
+<status status="PASS" endtime="20191111 17:22:36.507" starttime="20191111 17:22:36.492"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.507" level="INFO">${URL} = https://elisa--uat.cs107.my.salesforce.com/home/home.jsp</msg>
+<status status="PASS" endtime="20191111 17:22:36.507" starttime="20191111 17:22:36.507"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>1</arg>
+<arg>2</arg>
+<arg>TestData_Credentials</arg>
+</arguments>
+<assign>
+<var>${UserName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.507" level="INFO">${UserName} = ext-nikhil.rane@elisa.fi</msg>
+<status status="PASS" endtime="20191111 17:22:36.507" starttime="20191111 17:22:36.507"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${UserName}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.507" level="INFO">${UserName} = ext-nikhil.rane@elisa.fi</msg>
+<status status="PASS" endtime="20191111 17:22:36.507" starttime="20191111 17:22:36.507"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>1</arg>
+<arg>3</arg>
+<arg>TestData_Credentials</arg>
+</arguments>
+<assign>
+<var>${Password}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.507" level="INFO">${Password} = Apple@1995</msg>
+<status status="PASS" endtime="20191111 17:22:36.507" starttime="20191111 17:22:36.507"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.523" level="INFO">${Password} = Apple@1995</msg>
+<status status="PASS" endtime="20191111 17:22:36.523" starttime="20191111 17:22:36.507"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>1</arg>
+<arg>0</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${AccountName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.523" level="INFO">${AccountName} = InnoCloud Oy</msg>
+<status status="PASS" endtime="20191111 17:22:36.523" starttime="20191111 17:22:36.523"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${AccountName}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.523" level="INFO">${AccountName} = InnoCloud Oy</msg>
+<status status="PASS" endtime="20191111 17:22:36.523" starttime="20191111 17:22:36.523"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${Contact}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.523" level="INFO">${Contact} = Eng</msg>
+<status status="PASS" endtime="20191111 17:22:36.523" starttime="20191111 17:22:36.523"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Contact}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.523" level="INFO">${Contact} = Eng</msg>
+<status status="PASS" endtime="20191111 17:22:36.523" starttime="20191111 17:22:36.523"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>1</arg>
+<arg>2</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${Product}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.538" level="INFO">${Product} = Elisa Ring Ratkaisu</msg>
+<status status="PASS" endtime="20191111 17:22:36.538" starttime="20191111 17:22:36.523"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Product}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.538" level="INFO">${Product} = Elisa Ring Ratkaisu</msg>
+<status status="PASS" endtime="20191111 17:22:36.538" starttime="20191111 17:22:36.538"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>1</arg>
+<arg>3</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${SolutionName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.538" level="INFO">${SolutionName} = nikhils1994</msg>
+<status status="PASS" endtime="20191111 17:22:36.538" starttime="20191111 17:22:36.538"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${SolutionName}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.538" level="INFO">${SolutionName} = nikhils1994</msg>
+<status status="PASS" endtime="20191111 17:22:36.538" starttime="20191111 17:22:36.538"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>1</arg>
+<arg>4</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${FirstName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.554" level="INFO">${FirstName} = nikhils</msg>
+<status status="PASS" endtime="20191111 17:22:36.554" starttime="20191111 17:22:36.538"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.554" level="INFO">${FirstName} = nikhils</msg>
+<status status="PASS" endtime="20191111 17:22:36.554" starttime="20191111 17:22:36.554"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>1</arg>
+<arg>5</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${LastName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.554" level="INFO">${LastName} = ranen</msg>
+<status status="PASS" endtime="20191111 17:22:36.554" starttime="20191111 17:22:36.554"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${LastName}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.554" level="INFO">${LastName} = ranen</msg>
+<status status="PASS" endtime="20191111 17:22:36.554" starttime="20191111 17:22:36.554"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>1</arg>
+<arg>6</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${UserId}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.570" level="INFO">${UserId} = nikhi@gmail.com</msg>
+<status status="PASS" endtime="20191111 17:22:36.570" starttime="20191111 17:22:36.554"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${UserId}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.570" level="INFO">${UserId} = nikhi@gmail.com</msg>
+<status status="PASS" endtime="20191111 17:22:36.570" starttime="20191111 17:22:36.570"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>1</arg>
+<arg>7</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${Mobile}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.570" level="INFO">${Mobile} = 0417852478</msg>
+<status status="PASS" endtime="20191111 17:22:36.570" starttime="20191111 17:22:36.570"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Mobile}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.570" level="INFO">${Mobile} = 0417852478</msg>
+<status status="PASS" endtime="20191111 17:22:36.570" starttime="20191111 17:22:36.570"></status>
+</kw>
+<kw name="Return Row Count" library="UserKeywords">
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${rowCount}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.585" level="INFO">${rowCount} = 12</msg>
+<status status="PASS" endtime="20191111 17:22:36.585" starttime="20191111 17:22:36.570"></status>
+</kw>
+<kw type="for" name="${row} IN RANGE [ 1 | ${rowCount} ]">
+<kw type="foritem" name="${row} = 1">
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>4</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${FirstName1}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.590" level="INFO">${FirstName1} = nikhils</msg>
+<status status="PASS" endtime="20191111 17:22:36.590" starttime="20191111 17:22:36.585"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${FirstnameList}</arg>
+<arg>${FirstName1}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.590" starttime="20191111 17:22:36.590"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>5</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${LastName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.590" level="INFO">${LastName} = ranen</msg>
+<status status="PASS" endtime="20191111 17:22:36.590" starttime="20191111 17:22:36.590"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${LastnameList}</arg>
+<arg>${LastName}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.590" starttime="20191111 17:22:36.590"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>6</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${UserId}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.590" level="INFO">${UserId} = nikhi@gmail.com</msg>
+<status status="PASS" endtime="20191111 17:22:36.590" starttime="20191111 17:22:36.590"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${UserIdList}</arg>
+<arg>${UserId}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.606" starttime="20191111 17:22:36.590"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>7</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${Mobile}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.606" level="INFO">${Mobile} = 0417852478</msg>
+<status status="PASS" endtime="20191111 17:22:36.606" starttime="20191111 17:22:36.606"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MobileList}</arg>
+<arg>${Mobile}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.606" starttime="20191111 17:22:36.606"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:22:36.606" starttime="20191111 17:22:36.585"></status>
+</kw>
+<kw type="foritem" name="${row} = 2">
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>4</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${FirstName1}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.606" level="INFO">${FirstName1} = nik01</msg>
+<status status="PASS" endtime="20191111 17:22:36.606" starttime="20191111 17:22:36.606"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${FirstnameList}</arg>
+<arg>${FirstName1}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.606" starttime="20191111 17:22:36.606"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>5</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${LastName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.622" level="INFO">${LastName} = ran01</msg>
+<status status="PASS" endtime="20191111 17:22:36.622" starttime="20191111 17:22:36.606"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${LastnameList}</arg>
+<arg>${LastName}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.622" starttime="20191111 17:22:36.622"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>6</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${UserId}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.622" level="INFO">${UserId} = nikhils@01</msg>
+<status status="PASS" endtime="20191111 17:22:36.622" starttime="20191111 17:22:36.622"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${UserIdList}</arg>
+<arg>${UserId}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.622" starttime="20191111 17:22:36.622"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>7</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${Mobile}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.637" level="INFO">${Mobile} = 0417851401</msg>
+<status status="PASS" endtime="20191111 17:22:36.637" starttime="20191111 17:22:36.622"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MobileList}</arg>
+<arg>${Mobile}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.637" starttime="20191111 17:22:36.637"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:22:36.637" starttime="20191111 17:22:36.606"></status>
+</kw>
+<kw type="foritem" name="${row} = 3">
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>4</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${FirstName1}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.637" level="INFO">${FirstName1} = nik02</msg>
+<status status="PASS" endtime="20191111 17:22:36.637" starttime="20191111 17:22:36.637"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${FirstnameList}</arg>
+<arg>${FirstName1}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.637" starttime="20191111 17:22:36.637"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>5</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${LastName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.637" level="INFO">${LastName} = ran02</msg>
+<status status="PASS" endtime="20191111 17:22:36.653" starttime="20191111 17:22:36.637"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${LastnameList}</arg>
+<arg>${LastName}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.653" starttime="20191111 17:22:36.653"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>6</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${UserId}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.653" level="INFO">${UserId} = nikhil@02</msg>
+<status status="PASS" endtime="20191111 17:22:36.653" starttime="20191111 17:22:36.653"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${UserIdList}</arg>
+<arg>${UserId}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.653" starttime="20191111 17:22:36.653"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>7</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${Mobile}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.653" level="INFO">${Mobile} = 0417851402</msg>
+<status status="PASS" endtime="20191111 17:22:36.653" starttime="20191111 17:22:36.653"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MobileList}</arg>
+<arg>${Mobile}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.653" starttime="20191111 17:22:36.653"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:22:36.653" starttime="20191111 17:22:36.637"></status>
+</kw>
+<kw type="foritem" name="${row} = 4">
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>4</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${FirstName1}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.669" level="INFO">${FirstName1} = nik03</msg>
+<status status="PASS" endtime="20191111 17:22:36.669" starttime="20191111 17:22:36.653"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${FirstnameList}</arg>
+<arg>${FirstName1}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.669" starttime="20191111 17:22:36.669"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>5</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${LastName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.669" level="INFO">${LastName} = ran03</msg>
+<status status="PASS" endtime="20191111 17:22:36.669" starttime="20191111 17:22:36.669"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${LastnameList}</arg>
+<arg>${LastName}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.669" starttime="20191111 17:22:36.669"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>6</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${UserId}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.684" level="INFO">${UserId} = nikhil@03</msg>
+<status status="PASS" endtime="20191111 17:22:36.684" starttime="20191111 17:22:36.669"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${UserIdList}</arg>
+<arg>${UserId}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.684" starttime="20191111 17:22:36.684"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>7</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${Mobile}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.691" level="INFO">${Mobile} = 0417851403</msg>
+<status status="PASS" endtime="20191111 17:22:36.691" starttime="20191111 17:22:36.684"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MobileList}</arg>
+<arg>${Mobile}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.691" starttime="20191111 17:22:36.691"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:22:36.691" starttime="20191111 17:22:36.653"></status>
+</kw>
+<kw type="foritem" name="${row} = 5">
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>4</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${FirstName1}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.691" level="INFO">${FirstName1} = nik04</msg>
+<status status="PASS" endtime="20191111 17:22:36.691" starttime="20191111 17:22:36.691"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${FirstnameList}</arg>
+<arg>${FirstName1}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.691" starttime="20191111 17:22:36.691"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>5</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${LastName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.691" level="INFO">${LastName} = ran04</msg>
+<status status="PASS" endtime="20191111 17:22:36.706" starttime="20191111 17:22:36.691"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${LastnameList}</arg>
+<arg>${LastName}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.706" starttime="20191111 17:22:36.706"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>6</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${UserId}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.706" level="INFO">${UserId} = nikhil@04</msg>
+<status status="PASS" endtime="20191111 17:22:36.706" starttime="20191111 17:22:36.706"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${UserIdList}</arg>
+<arg>${UserId}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.706" starttime="20191111 17:22:36.706"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>7</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${Mobile}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.706" level="INFO">${Mobile} = 0417851404</msg>
+<status status="PASS" endtime="20191111 17:22:36.706" starttime="20191111 17:22:36.706"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MobileList}</arg>
+<arg>${Mobile}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.706" starttime="20191111 17:22:36.706"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:22:36.706" starttime="20191111 17:22:36.691"></status>
+</kw>
+<kw type="foritem" name="${row} = 6">
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>4</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${FirstName1}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.722" level="INFO">${FirstName1} = nik05</msg>
+<status status="PASS" endtime="20191111 17:22:36.722" starttime="20191111 17:22:36.706"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${FirstnameList}</arg>
+<arg>${FirstName1}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.722" starttime="20191111 17:22:36.722"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>5</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${LastName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.722" level="INFO">${LastName} = ran05</msg>
+<status status="PASS" endtime="20191111 17:22:36.722" starttime="20191111 17:22:36.722"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${LastnameList}</arg>
+<arg>${LastName}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.722" starttime="20191111 17:22:36.722"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>6</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${UserId}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.738" level="INFO">${UserId} = nikhil@05</msg>
+<status status="PASS" endtime="20191111 17:22:36.738" starttime="20191111 17:22:36.722"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${UserIdList}</arg>
+<arg>${UserId}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.738" starttime="20191111 17:22:36.738"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>7</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${Mobile}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.738" level="INFO">${Mobile} = 0417851405</msg>
+<status status="PASS" endtime="20191111 17:22:36.738" starttime="20191111 17:22:36.738"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MobileList}</arg>
+<arg>${Mobile}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.738" starttime="20191111 17:22:36.738"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:22:36.738" starttime="20191111 17:22:36.706"></status>
+</kw>
+<kw type="foritem" name="${row} = 7">
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>4</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${FirstName1}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.738" level="INFO">${FirstName1} = nik06</msg>
+<status status="PASS" endtime="20191111 17:22:36.738" starttime="20191111 17:22:36.738"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${FirstnameList}</arg>
+<arg>${FirstName1}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.753" starttime="20191111 17:22:36.753"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>5</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${LastName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.753" level="INFO">${LastName} = ran06</msg>
+<status status="PASS" endtime="20191111 17:22:36.753" starttime="20191111 17:22:36.753"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${LastnameList}</arg>
+<arg>${LastName}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.753" starttime="20191111 17:22:36.753"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>6</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${UserId}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.753" level="INFO">${UserId} = nikhil@06</msg>
+<status status="PASS" endtime="20191111 17:22:36.753" starttime="20191111 17:22:36.753"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${UserIdList}</arg>
+<arg>${UserId}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.753" starttime="20191111 17:22:36.753"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>7</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${Mobile}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.769" level="INFO">${Mobile} = 0417851406</msg>
+<status status="PASS" endtime="20191111 17:22:36.769" starttime="20191111 17:22:36.753"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MobileList}</arg>
+<arg>${Mobile}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.769" starttime="20191111 17:22:36.769"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:22:36.769" starttime="20191111 17:22:36.738"></status>
+</kw>
+<kw type="foritem" name="${row} = 8">
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>4</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${FirstName1}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.769" level="INFO">${FirstName1} = nik07</msg>
+<status status="PASS" endtime="20191111 17:22:36.769" starttime="20191111 17:22:36.769"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${FirstnameList}</arg>
+<arg>${FirstName1}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.769" starttime="20191111 17:22:36.769"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>5</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${LastName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.769" level="INFO">${LastName} = ran07</msg>
+<status status="PASS" endtime="20191111 17:22:36.784" starttime="20191111 17:22:36.769"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${LastnameList}</arg>
+<arg>${LastName}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.784" starttime="20191111 17:22:36.784"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>6</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${UserId}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.791" level="INFO">${UserId} = nikhil@07</msg>
+<status status="PASS" endtime="20191111 17:22:36.791" starttime="20191111 17:22:36.784"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${UserIdList}</arg>
+<arg>${UserId}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.791" starttime="20191111 17:22:36.791"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>7</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${Mobile}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.791" level="INFO">${Mobile} = 0417851407</msg>
+<status status="PASS" endtime="20191111 17:22:36.791" starttime="20191111 17:22:36.791"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MobileList}</arg>
+<arg>${Mobile}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.791" starttime="20191111 17:22:36.791"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:22:36.791" starttime="20191111 17:22:36.769"></status>
+</kw>
+<kw type="foritem" name="${row} = 9">
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>4</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${FirstName1}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.791" level="INFO">${FirstName1} = nik08</msg>
+<status status="PASS" endtime="20191111 17:22:36.791" starttime="20191111 17:22:36.791"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${FirstnameList}</arg>
+<arg>${FirstName1}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.791" starttime="20191111 17:22:36.791"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>5</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${LastName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.807" level="INFO">${LastName} = ran08</msg>
+<status status="PASS" endtime="20191111 17:22:36.807" starttime="20191111 17:22:36.791"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${LastnameList}</arg>
+<arg>${LastName}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.807" starttime="20191111 17:22:36.807"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>6</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${UserId}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.807" level="INFO">${UserId} = nikhil@08</msg>
+<status status="PASS" endtime="20191111 17:22:36.807" starttime="20191111 17:22:36.807"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${UserIdList}</arg>
+<arg>${UserId}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.807" starttime="20191111 17:22:36.807"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>7</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${Mobile}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.822" level="INFO">${Mobile} = 0417851408</msg>
+<status status="PASS" endtime="20191111 17:22:36.822" starttime="20191111 17:22:36.807"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MobileList}</arg>
+<arg>${Mobile}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.822" starttime="20191111 17:22:36.822"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:22:36.822" starttime="20191111 17:22:36.791"></status>
+</kw>
+<kw type="foritem" name="${row} = 10">
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>4</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${FirstName1}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.822" level="INFO">${FirstName1} = nik09</msg>
+<status status="PASS" endtime="20191111 17:22:36.822" starttime="20191111 17:22:36.822"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${FirstnameList}</arg>
+<arg>${FirstName1}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.822" starttime="20191111 17:22:36.822"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>5</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${LastName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.838" level="INFO">${LastName} = ran09</msg>
+<status status="PASS" endtime="20191111 17:22:36.838" starttime="20191111 17:22:36.822"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${LastnameList}</arg>
+<arg>${LastName}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.838" starttime="20191111 17:22:36.838"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>6</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${UserId}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.838" level="INFO">${UserId} = nikhil@09</msg>
+<status status="PASS" endtime="20191111 17:22:36.838" starttime="20191111 17:22:36.838"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${UserIdList}</arg>
+<arg>${UserId}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.838" starttime="20191111 17:22:36.838"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>7</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${Mobile}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.838" level="INFO">${Mobile} = 0417851409</msg>
+<status status="PASS" endtime="20191111 17:22:36.838" starttime="20191111 17:22:36.838"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MobileList}</arg>
+<arg>${Mobile}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.853" starttime="20191111 17:22:36.838"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:22:36.853" starttime="20191111 17:22:36.822"></status>
+</kw>
+<kw type="foritem" name="${row} = 11">
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>4</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${FirstName1}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.853" level="INFO">${FirstName1} = nik10</msg>
+<status status="PASS" endtime="20191111 17:22:36.853" starttime="20191111 17:22:36.853"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${FirstnameList}</arg>
+<arg>${FirstName1}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.853" starttime="20191111 17:22:36.853"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>5</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${LastName}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.853" level="INFO">${LastName} = ran10</msg>
+<status status="PASS" endtime="20191111 17:22:36.853" starttime="20191111 17:22:36.853"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${LastnameList}</arg>
+<arg>${LastName}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.853" starttime="20191111 17:22:36.853"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>6</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${UserId}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.869" level="INFO">${UserId} = nikhil@10</msg>
+<status status="PASS" endtime="20191111 17:22:36.869" starttime="20191111 17:22:36.853"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${UserIdList}</arg>
+<arg>${UserId}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.869" starttime="20191111 17:22:36.869"></status>
+</kw>
+<kw name="Excel Read" library="UserKeywords">
+<doc>Open and read an Excel file</doc>
+<arguments>
+<arg>${ExceLFilePath}</arg>
+<arg>${row}</arg>
+<arg>7</arg>
+<arg>TestData_Inputs</arg>
+</arguments>
+<assign>
+<var>${Mobile}</var>
+</assign>
+<msg timestamp="20191111 17:22:36.869" level="INFO">${Mobile} = 0417851410</msg>
+<status status="PASS" endtime="20191111 17:22:36.869" starttime="20191111 17:22:36.869"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${MobileList}</arg>
+<arg>${Mobile}</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:36.869" starttime="20191111 17:22:36.869"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:22:36.869" starttime="20191111 17:22:36.853"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:22:36.869" starttime="20191111 17:22:36.585"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>@{FirstnameList}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.869" level="INFO">@{FirstnameList} = [ nikhils | nik01 | nik02 | nik03 | nik04 | nik05 | nik06 | nik07 | nik08 | nik09 | nik10 ]</msg>
+<status status="PASS" endtime="20191111 17:22:36.869" starttime="20191111 17:22:36.869"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>@{LastnameList}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.869" level="INFO">@{LastnameList} = [ ranen | ran01 | ran02 | ran03 | ran04 | ran05 | ran06 | ran07 | ran08 | ran09 | ran10 ]</msg>
+<status status="PASS" endtime="20191111 17:22:36.869" starttime="20191111 17:22:36.869"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>@{UserIdList}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.885" level="INFO">@{UserIdList} = [ nikhi@gmail.com | nikhils@01 | nikhil@02 | nikhil@03 | nikhil@04 | nikhil@05 | nikhil@06 | nikhil@07 | nikhil@08 | nikhil@09 | nikhil@10 ]</msg>
+<status status="PASS" endtime="20191111 17:22:36.885" starttime="20191111 17:22:36.885"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>@{MobileList}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.885" level="INFO">@{MobileList} = [ 0417852478 | 0417851401 | 0417851402 | 0417851403 | 0417851404 | 0417851405 | 0417851406 | 0417851407 | 0417851408 | 0417851409 | 0417851410 ]</msg>
+<status status="PASS" endtime="20191111 17:22:36.885" starttime="20191111 17:22:36.885"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:22:36.885" starttime="20191111 17:22:36.492"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:36.885" level="INFO">Opening browser 'Chrome' to base url 'https://elisa--uat.cs107.my.salesforce.com/home/home.jsp'.</msg>
+<status status="PASS" endtime="20191111 17:22:44.768" starttime="20191111 17:22:36.885"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:22:44.772" starttime="20191111 17:22:44.769"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20191111 17:22:45.925" starttime="20191111 17:22:44.772"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:22:45.925" starttime="20191111 17:22:36.492"></status>
+</kw>
+<kw name="Do Login" library="LoginPage">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=Ecom_User_ID</arg>
+<arg>${UserName}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:45.925" level="INFO">Typing text 'ext-nikhil.rane@elisa.fi' into text field 'name=Ecom_User_ID'.</msg>
+<status status="PASS" endtime="20191111 17:22:46.081" starttime="20191111 17:22:45.925"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=Ecom_Password</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20191111 17:22:46.082" level="INFO">Typing password into text field 'name=Ecom_Password'.</msg>
+<status status="PASS" endtime="20191111 17:22:46.183" starttime="20191111 17:22:46.081"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>name=loginButton2</arg>
+</arguments>
+<msg timestamp="20191111 17:22:46.184" level="INFO">Clicking element 'name=loginButton2'.</msg>
+<status status="PASS" endtime="20191111 17:22:46.255" starttime="20191111 17:22:46.183"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:22:46.256" starttime="20191111 17:22:45.925"></status>
+</kw>
+<kw name="Validate Salesforce classic URL" library="LoginPage">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20191111 17:22:51.257" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191111 17:22:51.257" starttime="20191111 17:22:46.257"></status>
+</kw>
+<kw name="Get Location" library="Selenium2Library">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${LightURL}</var>
+</assign>
+<msg timestamp="20191111 17:22:58.694" level="INFO">${LightURL} = https://elisa--uat.cs107.my.salesforce.com/home/home.jsp</msg>
+<status status="PASS" endtime="20191111 17:22:58.695" starttime="20191111 17:22:51.258"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20191111 17:23:03.699" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191111 17:23:03.699" starttime="20191111 17:22:58.695"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${URL}" != "${LightURL}"</arg>
+<arg>URLCheck</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:23:03.699" starttime="20191111 17:23:03.699"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20191111 17:23:08.701" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191111 17:23:08.701" starttime="20191111 17:23:03.699"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:23:08.701" starttime="20191111 17:22:46.256"></status>
+</kw>
+<kw name="Move to another Account" library="LoginPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=(//a[@title='Press space bar or Enter key to open'])[2]/b</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:23:08.717" starttime="20191111 17:23:08.701"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//a[@title='Press space bar or Enter key to open'])[2]/b</arg>
+</arguments>
+<msg timestamp="20191111 17:23:08.717" level="INFO">Clicking element 'xpath=(//a[@title='Press space bar or Enter key to open'])[2]/b'.</msg>
+<status status="PASS" endtime="20191111 17:23:08.807" starttime="20191111 17:23:08.717"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=(//a[text()='Setup'])</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:23:08.847" starttime="20191111 17:23:08.807"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//a[text()='Setup'])</arg>
+</arguments>
+<msg timestamp="20191111 17:23:08.849" level="INFO">Clicking element 'xpath=(//a[text()='Setup'])'.</msg>
+<status status="PASS" endtime="20191111 17:23:15.501" starttime="20191111 17:23:08.848"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@class='searchBoxContainer']/input[1]</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:23:15.521" starttime="20191111 17:23:15.502"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@class='searchBoxContainer']/input[1]</arg>
+<arg>users</arg>
+</arguments>
+<msg timestamp="20191111 17:23:15.522" level="INFO">Typing text 'users' into text field 'xpath=//*[@class='searchBoxContainer']/input[1]'.</msg>
+<status status="PASS" endtime="20191111 17:23:15.625" starttime="20191111 17:23:15.522"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[text()='Users'])[1]</arg>
+</arguments>
+<msg timestamp="20191111 17:23:15.626" level="INFO">Clicking element 'xpath=(//*[text()='Users'])[1]'.</msg>
+<status status="PASS" endtime="20191111 17:23:18.660" starttime="20191111 17:23:15.625"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>id=fcf</arg>
+<arg>Elisa Sales Agent</arg>
+</arguments>
+<msg timestamp="20191111 17:23:18.662" level="INFO">Selecting options from selection list 'id=fcf' by label Elisa Sales Agent.</msg>
+<status status="PASS" endtime="20191111 17:23:18.712" starttime="20191111 17:23:18.661"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=(//*[text()='Aarnio, Niki'])</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:23:18.728" starttime="20191111 17:23:18.712"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[text()='Aarnio, Niki'])//preceding::a[1]</arg>
+</arguments>
+<msg timestamp="20191111 17:23:18.728" level="INFO">Clicking element 'xpath=(//*[text()='Aarnio, Niki'])//preceding::a[1]'.</msg>
+<status status="PASS" endtime="20191111 17:23:24.655" starttime="20191111 17:23:18.728"></status>
+</kw>
+<kw name="Get Element Count" library="Selenium2Library">
+<doc>Returns number of elements matching ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[@class='switch-to-lightning'])</arg>
+</arguments>
+<assign>
+<var>${Lightning}</var>
+</assign>
+<msg timestamp="20191111 17:23:29.709" level="INFO">${Lightning} = 0</msg>
+<status status="PASS" endtime="20191111 17:23:29.709" starttime="20191111 17:23:24.656"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Lightning} == 1</arg>
+<arg>Click Element</arg>
+<arg>xpath=(//*[@class='switch-to-lightning'])</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:23:29.711" starttime="20191111 17:23:29.710"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:23:29.711" starttime="20191111 17:23:08.701"></status>
+</kw>
+<kw name="Navigate to Account page" library="newAccountsPage">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@class='slds-grid slds-has-flexi-truncate navUL']/one-app-nav-bar-item-root[3]/a/span</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:23:29.743" starttime="20191111 17:23:29.712"></status>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>document.evaluate("//*[@class='slds-grid slds-has-flexi-truncate navUL']/one-app-nav-bar-item-root[3]/a/span", document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();</arg>
+</arguments>
+<msg timestamp="20191111 17:23:29.747" level="INFO">Executing JavaScript:
+document.evaluate("//*[@class='slds-grid slds-has-flexi-truncate navUL']/one-app-nav-bar-item-root[3]/a/span", document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" endtime="20191111 17:23:29.769" starttime="20191111 17:23:29.744"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20191111 17:23:34.780" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191111 17:23:34.780" starttime="20191111 17:23:29.770"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@class='uiInput uiAutocomplete uiInput--default']/input</arg>
+<arg>${AccountName}</arg>
+</arguments>
+<msg timestamp="20191111 17:23:34.780" level="INFO">Typing text 'InnoCloud Oy' into text field 'xpath=//div[@class='uiInput uiAutocomplete uiInput--default']/input'.</msg>
+<status status="PASS" endtime="20191111 17:23:35.172" starttime="20191111 17:23:34.780"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20191111 17:23:40.174" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191111 17:23:40.175" starttime="20191111 17:23:35.174"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//ul[contains(@class,'lookup__list')]/li[1]/a</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:23:40.219" starttime="20191111 17:23:40.177"></status>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>document.evaluate("//ul[contains(@class,'lookup__list')]/li[1]/a", document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();</arg>
+</arguments>
+<msg timestamp="20191111 17:23:40.219" level="INFO">Executing JavaScript:
+document.evaluate("//ul[contains(@class,'lookup__list')]/li[1]/a", document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" endtime="20191111 17:23:40.374" starttime="20191111 17:23:40.219"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=(//*[@class='slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered resizable-cols slds-table--resizable-cols uiVirtualDataTable'])[2]/tbody/tr/th/span/a</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:23:42.774" starttime="20191111 17:23:40.374"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=(//*[@class='slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered resizable-cols slds-table--resizable-cols uiVirtualDataTable'])[2]/tbody/tr/th/span/a</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:23:42.791" starttime="20191111 17:23:42.775"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[@class='slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered resizable-cols slds-table--resizable-cols uiVirtualDataTable'])[2]/tbody/tr/th/span/a</arg>
+</arguments>
+<msg timestamp="20191111 17:23:42.792" level="INFO">Clicking element 'xpath=(//*[@class='slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered resizable-cols slds-table--resizable-cols uiVirtualDataTable'])[2]/tbody/tr/th/span/a'.</msg>
+<status status="PASS" endtime="20191111 17:23:43.150" starttime="20191111 17:23:42.792"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:23:43.150" starttime="20191111 17:23:29.712"></status>
+</kw>
+<kw name="Navigate to opportinity" library="newAccountsPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=(//*[@class='slds-button slds-button--neutral slds-truncate'])[3]</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:23:46.582" starttime="20191111 17:23:43.153"></status>
+</kw>
+<kw name="Set Focus To Element" library="Selenium2Library">
+<doc>Sets focus to element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[@class='slds-button slds-button--neutral slds-truncate'])[3]</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:23:46.617" starttime="20191111 17:23:46.583"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[@class='slds-button slds-button--neutral slds-truncate'])[3]</arg>
+</arguments>
+<msg timestamp="20191111 17:23:46.618" level="INFO">Clicking element 'xpath=(//*[@class='slds-button slds-button--neutral slds-truncate'])[3]'.</msg>
+<status status="PASS" endtime="20191111 17:23:46.717" starttime="20191111 17:23:46.618"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:23:46.718" starttime="20191111 17:23:43.151"></status>
+</kw>
+<kw name="Select/Create Contact and BA" library="newAccountsPage">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>30</arg>
+</arguments>
+<msg timestamp="20191111 17:24:16.740" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" endtime="20191111 17:24:16.740" starttime="20191111 17:23:46.721"></status>
+</kw>
+<kw name="Select Frame" library="Selenium2Library">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe</arg>
+</arguments>
+<msg timestamp="20191111 17:24:16.740" level="INFO">Selecting frame 'xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe'.</msg>
+<status status="PASS" endtime="20191111 17:24:16.787" starttime="20191111 17:24:16.740"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=(//*[@class='cs-btn ng-isolate-scope'])[1]/span[2]</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:24:16.802" starttime="20191111 17:24:16.787"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=(//*[@class='cs-btn ng-isolate-scope'])[1]/span[2]</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:24:16.824" starttime="20191111 17:24:16.802"></status>
+</kw>
+<kw name="Set Focus To Element" library="Selenium2Library">
+<doc>Sets focus to element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[@class='cs-btn ng-isolate-scope'])[1]/span[2]</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:24:16.840" starttime="20191111 17:24:16.824"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[@class='cs-btn ng-isolate-scope'])[1]/span[2]</arg>
+</arguments>
+<msg timestamp="20191111 17:24:16.840" level="INFO">Clicking element 'xpath=(//*[@class='cs-btn ng-isolate-scope'])[1]/span[2]'.</msg>
+<status status="PASS" endtime="20191111 17:24:16.981" starttime="20191111 17:24:16.840"></status>
+</kw>
+<kw name="Unselect Frame" library="Selenium2Library">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" endtime="20191111 17:24:16.988" starttime="20191111 17:24:16.982"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:24:17.006" starttime="20191111 17:24:16.988"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20191111 17:24:27.007" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20191111 17:24:27.008" starttime="20191111 17:24:17.007"></status>
+</kw>
+<kw name="Select Frame" library="Selenium2Library">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe</arg>
+</arguments>
+<msg timestamp="20191111 17:24:27.010" level="INFO">Selecting frame 'xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe'.</msg>
+<status status="PASS" endtime="20191111 17:24:27.091" starttime="20191111 17:24:27.008"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=(//*[contains(@class,'dataCell')])[1]/a</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:24:27.105" starttime="20191111 17:24:27.091"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[contains(@class,'dataCell')])[1]/a</arg>
+</arguments>
+<msg timestamp="20191111 17:24:27.106" level="INFO">Clicking element 'xpath=(//*[contains(@class,'dataCell')])[1]/a'.</msg>
+<status status="PASS" endtime="20191111 17:24:27.213" starttime="20191111 17:24:27.105"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>7</arg>
+</arguments>
+<msg timestamp="20191111 17:24:34.226" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" endtime="20191111 17:24:34.226" starttime="20191111 17:24:27.214"></status>
+</kw>
+<kw name="Handle Alert" library="Selenium2Library">
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" endtime="20191111 17:24:34.252" starttime="20191111 17:24:34.226"></status>
+</kw>
+<kw name="Unselect Frame" library="Selenium2Library">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" endtime="20191111 17:24:37.425" starttime="20191111 17:24:34.253"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:24:43.510" starttime="20191111 17:24:37.426"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20191111 17:24:53.518" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20191111 17:24:53.518" starttime="20191111 17:24:43.511"></status>
+</kw>
+<kw name="Select Frame" library="Selenium2Library">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe</arg>
+</arguments>
+<msg timestamp="20191111 17:24:53.518" level="INFO">Selecting frame 'xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe'.</msg>
+<status status="PASS" endtime="20191111 17:24:53.555" starttime="20191111 17:24:53.518"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=(//*[@class='btn-group ng-scope'])[2]/button/span[2]</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:24:53.571" starttime="20191111 17:24:53.555"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[@class='btn-group ng-scope'])[2]/button/span[2]</arg>
+</arguments>
+<msg timestamp="20191111 17:24:53.571" level="INFO">Clicking element 'xpath=(//*[@class='btn-group ng-scope'])[2]/button/span[2]'.</msg>
+<status status="PASS" endtime="20191111 17:24:53.698" starttime="20191111 17:24:53.571"></status>
+</kw>
+<kw name="Unselect Frame" library="Selenium2Library">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" endtime="20191111 17:24:53.703" starttime="20191111 17:24:53.699"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:24:53.714" starttime="20191111 17:24:53.704"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20191111 17:25:03.724" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20191111 17:25:03.724" starttime="20191111 17:24:53.714"></status>
+</kw>
+<kw name="Select Frame" library="Selenium2Library">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe</arg>
+</arguments>
+<msg timestamp="20191111 17:25:03.724" level="INFO">Selecting frame 'xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe'.</msg>
+<status status="PASS" endtime="20191111 17:25:03.755" starttime="20191111 17:25:03.724"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=(//*[contains(@class,'dataCell')])[1]/a</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:25:03.770" starttime="20191111 17:25:03.755"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[contains(@class,'dataCell')])[1]/a</arg>
+</arguments>
+<msg timestamp="20191111 17:25:03.777" level="INFO">Clicking element 'xpath=(//*[contains(@class,'dataCell')])[1]/a'.</msg>
+<status status="PASS" endtime="20191111 17:25:03.875" starttime="20191111 17:25:03.777"></status>
+</kw>
+<kw name="Unselect Frame" library="Selenium2Library">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" endtime="20191111 17:25:03.882" starttime="20191111 17:25:03.876"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:25:03.883" starttime="20191111 17:23:46.719"></status>
+</kw>
+<kw name="Add and Select Product" library="newAccountsPage">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20191111 17:25:08.887" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191111 17:25:08.887" starttime="20191111 17:25:03.885"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:25:08.991" starttime="20191111 17:25:08.887"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20191111 17:25:18.992" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20191111 17:25:18.993" starttime="20191111 17:25:08.991"></status>
+</kw>
+<kw name="Select Frame" library="Selenium2Library">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe</arg>
+</arguments>
+<msg timestamp="20191111 17:25:18.998" level="INFO">Selecting frame 'xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe'.</msg>
+<status status="PASS" endtime="20191111 17:25:19.060" starttime="20191111 17:25:18.995"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=(//span[@class='btn-label ng-binding'])[6]</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:25:19.074" starttime="20191111 17:25:19.060"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//span[@class='btn-label ng-binding'])[6]</arg>
+</arguments>
+<msg timestamp="20191111 17:25:19.075" level="INFO">Clicking element 'xpath=(//span[@class='btn-label ng-binding'])[6]'.</msg>
+<status status="PASS" endtime="20191111 17:25:19.189" starttime="20191111 17:25:19.075"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20191111 17:25:24.193" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191111 17:25:24.193" starttime="20191111 17:25:19.189"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@class='search-box ng-pristine ng-valid ng-touched']</arg>
+<arg>100</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:25:24.215" starttime="20191111 17:25:24.193"></status>
+</kw>
+<kw name="Set Focus To Element" library="Selenium2Library">
+<doc>Sets focus to element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@class='search-box ng-pristine ng-valid ng-touched']</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:25:24.236" starttime="20191111 17:25:24.215"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@class='search-box ng-pristine ng-valid ng-touched']</arg>
+<arg>${Product}</arg>
+</arguments>
+<msg timestamp="20191111 17:25:24.238" level="INFO">Typing text 'Elisa Ring Ratkaisu' into text field 'xpath=//*[@class='search-box ng-pristine ng-valid ng-touched']'.</msg>
+<status status="PASS" endtime="20191111 17:25:24.491" starttime="20191111 17:25:24.237"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20191111 17:25:28.493" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20191111 17:25:28.493" starttime="20191111 17:25:24.491"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath=//a[text()='${Product}']</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:25:28.515" starttime="20191111 17:25:28.493"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[text()='${Product}']</arg>
+</arguments>
+<msg timestamp="20191111 17:25:28.515" level="INFO">Clicking element 'xpath=//a[text()='Elisa Ring Ratkaisu']'.</msg>
+<status status="PASS" endtime="20191111 17:25:28.638" starttime="20191111 17:25:28.515"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20191111 17:25:33.651" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191111 17:25:33.651" starttime="20191111 17:25:28.639"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath=(//span[@class='btn-label ng-binding'])[9]</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:25:33.682" starttime="20191111 17:25:33.651"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//span[@class='btn-label ng-binding'])[9]</arg>
+</arguments>
+<msg timestamp="20191111 17:25:33.682" level="INFO">Clicking element 'xpath=(//span[@class='btn-label ng-binding'])[9]'.</msg>
+<status status="PASS" endtime="20191111 17:25:33.787" starttime="20191111 17:25:33.682"></status>
+</kw>
+<kw name="Unselect Frame" library="Selenium2Library">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" endtime="20191111 17:25:33.792" starttime="20191111 17:25:33.787"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:25:33.810" starttime="20191111 17:25:33.792"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20191111 17:25:43.812" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20191111 17:25:43.814" starttime="20191111 17:25:33.810"></status>
+</kw>
+<kw name="Select Frame" library="Selenium2Library">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe</arg>
+</arguments>
+<msg timestamp="20191111 17:25:43.819" level="INFO">Selecting frame 'xpath=//*[@class='iframe-parent slds-template_iframe slds-card']/iframe'.</msg>
+<status status="PASS" endtime="20191111 17:25:43.885" starttime="20191111 17:25:43.816"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//a[text()='${Product}']//following::button[1]</arg>
+<arg>500</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:26:06.088" starttime="20191111 17:25:43.886"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath=//a[text()='${Product}']//following::button[1]</arg>
+<arg>500</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:26:06.127" starttime="20191111 17:26:06.089"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[text()='${Product}']//following::button[1]</arg>
+</arguments>
+<msg timestamp="20191111 17:26:06.128" level="INFO">Clicking element 'xpath=//a[text()='Elisa Ring Ratkaisu']//following::button[1]'.</msg>
+<status status="PASS" endtime="20191111 17:26:06.249" starttime="20191111 17:26:06.128"></status>
+</kw>
+<status status="PASS" endtime="20191111 17:26:06.250" starttime="20191111 17:25:03.884"></status>
+</kw>
+<kw name="Edit Configuration for Default Values" library="NewEditConfigurationPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//div[@id='EditProductDialog']/iframe</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:26:07.000" starttime="20191111 17:26:06.251"></status>
+</kw>
+<kw name="Select Frame" library="Selenium2Library">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath=//div[@id='EditProductDialog']/iframe</arg>
+</arguments>
+<msg timestamp="20191111 17:26:07.002" level="INFO">Selecting frame 'xpath=//div[@id='EditProductDialog']/iframe'.</msg>
+<status status="PASS" endtime="20191111 17:26:07.049" starttime="20191111 17:26:07.001"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20191111 17:26:17.073" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20191111 17:26:17.073" starttime="20191111 17:26:07.072"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=(//*[@class='slds-input'])[1]</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:26:21.747" starttime="20191111 17:26:17.074"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=(//*[@class='slds-input'])[1]</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:26:21.803" starttime="20191111 17:26:21.748"></status>
+</kw>
+<kw name="Set Focus To Element" library="Selenium2Library">
+<doc>Sets focus to element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[@class='slds-input'])[1]</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:26:21.825" starttime="20191111 17:26:21.804"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20191111 17:26:24.827" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20191111 17:26:24.827" starttime="20191111 17:26:21.826"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[@class='slds-input'])[1]</arg>
+<arg>${SolutionName}</arg>
+</arguments>
+<msg timestamp="20191111 17:26:24.829" level="INFO">Typing text 'nikhils1994' into text field 'xpath=(//*[@class='slds-input'])[1]'.</msg>
+<status status="PASS" endtime="20191111 17:26:25.011" starttime="20191111 17:26:24.828"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id='s2id_Ring_Solution:General_Information:PSTN_Range_Lookup_0']/a/span[2]</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:26:25.042" starttime="20191111 17:26:25.012"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@id='s2id_Ring_Solution:General_Information:PSTN_Range_Lookup_0']/a/span[2]</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:26:25.052" starttime="20191111 17:26:25.042"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id='s2id_Ring_Solution:General_Information:PSTN_Range_Lookup_0']/a/span[2]</arg>
+</arguments>
+<msg timestamp="20191111 17:26:25.053" level="INFO">Clicking element 'xpath=//*[@id='s2id_Ring_Solution:General_Information:PSTN_Range_Lookup_0']/a/span[2]'.</msg>
+<status status="PASS" endtime="20191111 17:26:25.201" starttime="20191111 17:26:25.053"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=(//*[@class='select2-results-dept-0 select2-result select2-result-selectable'])[2]</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:26:26.794" starttime="20191111 17:26:25.201"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=(//*[@class='select2-results-dept-0 select2-result select2-result-selectable'])[2]</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:26:26.805" starttime="20191111 17:26:26.794"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[@class='select2-results-dept-0 select2-result select2-result-selectable'])[2]</arg>
+</arguments>
+<msg timestamp="20191111 17:26:26.806" level="INFO">Clicking element 'xpath=(//*[@class='select2-results-dept-0 select2-result select2-result-selectable'])[2]'.</msg>
+<status status="PASS" endtime="20191111 17:26:26.941" starttime="20191111 17:26:26.806"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>15</arg>
+</arguments>
+<msg timestamp="20191111 17:26:41.950" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" endtime="20191111 17:26:41.950" starttime="20191111 17:26:26.942"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[text()='Today']</arg>
+<arg>60</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:26:41.994" starttime="20191111 17:26:41.950"></status>
+</kw>
+<kw name="Set Focus To Element" library="Selenium2Library">
+<doc>Sets focus to element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[text()='Today']</arg>
+</arguments>
+<status status="PASS" endtime="20191111 17:26:42.012" starttime="20191111 17:26:41.995"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[text()='Today']</arg>
+</arguments>
+<msg timestamp="20191111 17:26:42.013" level="INFO">Clicking element 'xpath=//*[text()='Today']'.</msg>
+<status status="PASS" endtime="20191111 17:26:42.156" starttime="20191111 17:26:42.012"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20191111 17:26:47.166" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191111 17:26:47.166" starttime="20191111 17:26:42.157"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=technicalConfigFrame</arg>
+<arg>60</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20191111 17:26:59.344" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=78.0.3904.87)
+</msg>
+<status status="FAIL" endtime="20191111 17:26:59.344" starttime="20191111 17:26:53.242"></status>
+</kw>
+<msg timestamp="20191111 17:26:59.344" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=78.0.3904.87)
+</msg>
+<msg timestamp="20191111 17:26:59.354" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=78.0.3904.87)
+</msg>
+<status status="FAIL" endtime="20191111 17:26:59.354" starttime="20191111 17:26:47.166"></status>
+</kw>
+<status status="FAIL" endtime="20191111 17:26:59.354" starttime="20191111 17:26:06.250"></status>
+</kw>
+<status status="FAIL" endtime="20191111 17:26:59.354" critical="yes" starttime="20191111 17:22:36.490">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=78.0.3904.87)
+</status>
+</test>
+<status status="FAIL" endtime="20191111 17:26:59.362" starttime="20191111 17:22:34.755"></status>
+</suite>
+<status status="FAIL" endtime="20191111 17:26:59.363" starttime="20191111 17:22:34.755"></status>
+</suite>
+<status status="FAIL" endtime="20191111 17:26:59.363" starttime="20191111 17:22:34.755"></status>
+</suite>
+<status status="FAIL" endtime="20191111 17:26:59.363" starttime="20191111 17:22:34.749"></status>
+</suite>
+<status status="FAIL" endtime="20191111 17:26:59.363" starttime="20191111 17:22:34.717"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="ElisaAutomation" pass="0">ElisaAutomation</stat>
+<stat fail="1" id="s1-s1" name="Ring" pass="0">ElisaAutomation.Ring</stat>
+<stat fail="1" id="s1-s1-s1" name="TestSuits" pass="0">ElisaAutomation.Ring.TestSuits</stat>
+<stat fail="1" id="s1-s1-s1-s1" name="RingVoice" pass="0">ElisaAutomation.Ring.TestSuits.RingVoice</stat>
+<stat fail="1" id="s1-s1-s1-s1-s1" name="TC 001-Create Ring Solution-Default Values" pass="0">ElisaAutomation.Ring.TestSuits.RingVoice.TC 001-Create Ring Solution-Default Values</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20191111 17:22:36.422" level="WARN">Collapsing consecutive whitespace during parsing is deprecated. Fix ' # TestEx' in file 'C:\Users\nikhiran\eclipse-workspace\ElisaAutomation\Ring\TestUtilities\ExcelOperations.robot' on line 91.</msg>
+<msg timestamp="20191111 17:22:36.454" level="ERROR">Error in file 'C:\Users\nikhiran\eclipse-workspace\ElisaAutomation\Ring\Pages\newAccountsPage.robot': UnicodeDecodeError: 'utf8' codec can't decode byte 0xe4 in position 34: invalid continuation byte</msg>
+<msg timestamp="20191111 17:22:36.485" level="ERROR">Error in file 'C:\Users\nikhiran\eclipse-workspace\ElisaAutomation\Ring\TestSuits\RingVoice\TC_001-Create Ring Solution-Default Values.robot': UnicodeDecodeError: 'utf8' codec can't decode byte 0xe4 in position 34: invalid continuation byte</msg>
+<msg timestamp="20191111 17:26:59.344" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=78.0.3904.87)
+</msg>
+</errors>
+</robot>

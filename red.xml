@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfiguration>
+    <configVersion>2</configVersion>
+    <relativeTo>WORKSPACE</relativeTo>
+    <referencedLibrary type="PYTHON" name="Selenium2Library" path="C:/Python27/Lib/site-packages/Selenium2Library/__init__.py"/>
+    <referencedLibrary type="PYTHON" name="ExcelLibrary" path="C:/Python27/Lib/site-packages/ExcelLibrary.py"/>
+    <referencedLibrary type="PYTHON" name="UserKeywords" path="ElisaAutomation/Lankanumero/ExternalKeywords/UserKeywords.py"/>
+    <referencedLibrary type="PYTHON" name="DatabaseLibrary" path="C:/Python27/Lib/site-packages/DatabaseLibrary/__init__.py"/>
+    <referencedLibrary type="PYTHON" name="UserKeywords" path="ElisaAutomation/Ring/ExternalKeywords/UserKeywords.py"/>
+    <referencedLibrary type="PYTHON" name="UserKeywords" path="ElisaAutomation/MassMACD/External Keywords/UserKeywords.py"/>
+    <pythonpath/>
+    <classpath/>
+    <excludedForValidation/>
+    <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>
+    <validatedFileMaxSize>1024</validatedFileMaxSize>
+</projectConfiguration>
